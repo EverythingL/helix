@@ -1,12 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Helix</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="container header-container">
+            <div class="header-logo">
+                <a href="#"><img src="../img/icons/logo.svg" alt="logo image"></a>
+            </div>
+
+            <div class="header-nav">
+                <ul class="header-nav_list">
+                    <li><a href="#">Population Health</a></li>
+                    <li><a href="#">DNA Test</a></li>
+                    <li><a href="#">Register Kit</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+
+            <div class="header-cart">
+                <button class="header-cart-btn" id="header-cart-button"></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="content" id="content">
+        <div class="container">
+
+            <div class="banner">
+                <div class="banner-wrapper">
+                    <div class="banner-text">
+                        <h1 class="banner-text_title">
+                            The Exome+<span>®</span>assay
+                        </h1>
+                        <span class="banner-text_subtitle">
+                            Get the performance of a targeted panel, the breadth of a microarray,
+                            and the completeness of an exome — all from one assay.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs">
+                <div class="tabs-wrapper">
+                    <div class="tabs-text">
+                        <div class="tabs-text_title">
+                            Bringing the benefits of multiple assays into one
+                        </div>
+                        <div class="tabs-text_subtitle">
+                            Helix’s Exome+<span>®</span>assay has been carefully
+                            optimized to provide the benefits of lcWGS,
+                            whole exome sequencing, microarrays, and targeted panels — all in one assay.
+                        </div>
+                    </div>
+
+                    <div class="tabs-links">
+                        <div class="tab-link" data-tab="0">Targeted Panels</div>
+                        <div class="tab-link" data-tab="1">Whole Exome Sequencing</div>
+                        <div class="tab-link" data-tab="2">lcWGS and Microarrays</div>
+                    </div>
+
+                    <div class="tabs-content-wrapper">
+                        <div class="tabs-content" data-show="0">
+                            <div class="tabs-content_text">
+                                <h2 class="tabs-content_text_title"></h2>
+                                <p>Panels are often used in clinical settings because
+                                    they’re low cost and provide high quality coverage of
+                                    specific, pre-defined genomic regions of interest. While
+                                    useful in certain settings, such assays are limited by their narrow focus.</p>
+                                <p>With ≥ 99.5% call rate across ~600 genes relevant to many
+                                    disease states, the Exome+ assay enables you to run multiple
+                                    panel-grade analyses with a single sample.</p>
+                            </div>
+                            <div class="tabs-content_diagrams">
+                                <img src="/img/icons/diagram1.svg" alt="diagram Targeted Panels">
+                            </div>
+                        </div>
+
+                        <div class="tabs-content" data-show="1">
+                            <div class="tabs-content_text">
+                                <h2 class="tabs-content_text_title"></h2>
+                                <p>Panels are often used in clinical settings because
+                                    they’re low cost and provide high quality coverage of
+                                    specific, pre-defined genomic regions of interest. While
+                                    useful in certain settings, such assays are limited by their narrow focus.</p>
+                                <p>With ≥ 99.5% call rate across ~600 genes relevant to many
+                                    disease states, the Exome+ assay enables you to run multiple
+                                    panel-grade analyses with a single sample.</p>
+                            </div>
+                            <div class="tabs-content_diagrams">
+                                <img src="/img/icons/diagram2.svg" alt="diagram Whole Exome Sequencing">
+                            </div>
+                        </div>
+
+                        <div class="tabs-content" data-show="2">
+                            <div class="tabs-content_text">
+                                <h2 class="tabs-content_text_title"></h2>
+                                <p>Panels are often used in clinical settings because
+                                    they’re low cost and provide high quality coverage of
+                                    specific, pre-defined genomic regions of interest. While
+                                    useful in certain settings, such assays are limited by their narrow focus.</p>
+                                <p>With ≥ 99.5% call rate across ~600 genes relevant to many
+                                    disease states, the Exome+ assay enables you to run multiple
+                                    panel-grade analyses with a single sample.</p>
+                            </div>
+                            <div class="tabs-content_diagrams">
+                                <img src="/img/icons/diagram3.svg" alt="diagram lcWGS and Microarrays">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-wrapper">
+                    <div class="faq-text">
+                        <div class="faq-text_title">
+                            A future proofed assay
+                        </div>
+                        <div class="faq-text_subtitle">
+                            There are several advantages to running panels in the 
+                            presence of a whole exome, including flexible test design, 
+                            flexible re-testing, and increased functionality.
+                        </div>
+                    </div>
+
+                    <div class="faqs-content-wrapper">
+                        <ul class="faqs-list">
+                            <li class="faq-item">
+                                <div class="faq-item-visible">
+                                    <h3 class="faq-item-title">Flexible test design</h3>
+                                </div>
+                                <div class="faq-item-hidden">
+                                    <div class="faq-item-text">
+                                        1) The Exome+ assay provides the flexibility needed to build 
+                                        a comprehensive panel that can be expanded over time. With ~20,000 
+                                        genes sequenced in each sample, every gene becomes a candidate for inclusion. 
+                                        And, while we have ensured the highest call rates across those genes that are 
+                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for all 
+                                        genes beyond this core set.
+                                    </div>
+                                    <div class="faq-item-statistics">
+                                        <div class="faq-item-statistics-top">
+                                            <span class="statistics-number">20,000</span>
+                                            <span>Genes sequenced in each sample</span>
+                                        </div>
+                                        <div class="faq-item-statistics-bottom">
+                                            <span class="statistics-number">≥99.5%</span>
+                                            <span>panel call rates</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--  -->
+                            <li class="faq-item">
+                                <div class="faq-item-visible">
+                                    <h3 class="faq-item-title">Sequence once, query often</h3>
+                                </div>
+                                <div class="faq-item-hidden">
+                                    <div class="faq-item-text">
+                                        2) The Exome+ assay provides the flexibility needed to build 
+                                        a comprehensive panel that can be expanded over time. With ~20,000 
+                                        genes sequenced in each sample, every gene becomes a candidate for inclusion. 
+                                        And, while we have ensured the highest call rates across those genes that are 
+                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for all 
+                                        genes beyond this core set.
+                                    </div>
+                                    <div class="faq-item-statistics">
+                                        <div class="faq-item-statistics-top">
+                                            <span class="statistics-number">15,000</span>
+                                            <span>Genes sequenced in each sample</span>
+                                        </div>
+                                        <div class="faq-item-statistics-bottom">
+                                            <span class="statistics-number">≥79.5%</span>
+                                            <span>panel call rates</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--  -->
+                            <li class="faq-item">
+                                <div class="faq-item-visible">
+                                    <h3 class="faq-item-title">Comprehensive PGx</h3>
+                                </div>
+                                <div class="faq-item-hidden">
+                                    <div class="faq-item-text">
+                                        3) The Exome+ assay provides the flexibility needed to build 
+                                        a comprehensive panel that can be expanded over time. With ~20,000 
+                                        genes sequenced in each sample, every gene becomes a candidate for inclusion. 
+                                        And, while we have ensured the highest call rates across those genes that are 
+                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for all 
+                                        genes beyond this core set.
+                                    </div>
+                                    <div class="faq-item-statistics">
+                                        <div class="faq-item-statistics-top">
+                                            <span class="statistics-number">10,000</span>
+                                            <span>Genes sequenced in each sample</span>
+                                        </div>
+                                        <div class="faq-item-statistics-bottom">
+                                            <span class="statistics-number">≥88.5%</span>
+                                            <span>panel call rates</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 </body>
+
 </html>
