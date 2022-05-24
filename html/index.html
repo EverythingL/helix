@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helix</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <script defer src="/script/common.js"></script>
 </head>
 
 <body>
@@ -31,9 +33,9 @@
     </header>
 
     <div class="content" id="content">
-        <div class="container">
 
-            <div class="banner">
+        <div class="banner">
+            <div class="container">
                 <div class="banner-wrapper">
                     <div class="banner-text">
                         <h1 class="banner-text_title">
@@ -46,8 +48,10 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="tabs">
+        <div class="tabs">
+            <div class="container">
                 <div class="tabs-wrapper">
                     <div class="tabs-text">
                         <div class="tabs-text_title">
@@ -61,15 +65,15 @@
                     </div>
 
                     <div class="tabs-links">
-                        <div class="tab-link" data-tab="0">Targeted Panels</div>
-                        <div class="tab-link" data-tab="1">Whole Exome Sequencing</div>
-                        <div class="tab-link" data-tab="2">lcWGS and Microarrays</div>
+                        <button class="tab-link tab-link-active" data-tab="0">Targeted Panels</button>
+                        <button class="tab-link" data-tab="1">Whole Exome Sequencing</button>
+                        <button class="tab-link" data-tab="2">lcWGS and Microarrays</button>
                     </div>
 
                     <div class="tabs-content-wrapper">
                         <div class="tabs-content" data-show="0">
                             <div class="tabs-content_text">
-                                <h2 class="tabs-content_text_title"></h2>
+                                <h2 class="tabs-content_text_title">Targeted Panels</h2>
                                 <p>Panels are often used in clinical settings because
                                     they’re low cost and provide high quality coverage of
                                     specific, pre-defined genomic regions of interest. While
@@ -83,32 +87,37 @@
                             </div>
                         </div>
 
-                        <div class="tabs-content" data-show="1">
+                        <div class="tabs-content tabs-content-hidden" data-show="1">
                             <div class="tabs-content_text">
-                                <h2 class="tabs-content_text_title"></h2>
-                                <p>Panels are often used in clinical settings because
-                                    they’re low cost and provide high quality coverage of
-                                    specific, pre-defined genomic regions of interest. While
-                                    useful in certain settings, such assays are limited by their narrow focus.</p>
-                                <p>With ≥ 99.5% call rate across ~600 genes relevant to many
-                                    disease states, the Exome+ assay enables you to run multiple
-                                    panel-grade analyses with a single sample.</p>
+                                <h2 class="tabs-content_text_title">lcWGS and Microarrays</h2>
+                                <p>Inherited susceptibility to common, complex diseases may be 
+                                    caused by rare, pathogenic variants (“monogenic”) or by the 
+                                    cumulative effect of numerous common variants (“polygenic”). 
+                                    Comprehensive genome interpretation should enable assessment for 
+                                    both monogenic and polygenic components of inherited risk. </p>
+                                <p>The traditional approach requires two distinct genetic testing 
+                                    technologies—high coverage sequencing of known genes to detect 
+                                    monogenic variants and a genome-wide genotyping array followed 
+                                    by imputation to calculate genome-wide polygenic scores (GPSs).</p>
                             </div>
                             <div class="tabs-content_diagrams">
                                 <img src="/img/icons/diagram2.svg" alt="diagram Whole Exome Sequencing">
                             </div>
                         </div>
 
-                        <div class="tabs-content" data-show="2">
+                        <div class="tabs-content tabs-content-hidden" data-show="2">
                             <div class="tabs-content_text">
-                                <h2 class="tabs-content_text_title"></h2>
-                                <p>Panels are often used in clinical settings because
-                                    they’re low cost and provide high quality coverage of
-                                    specific, pre-defined genomic regions of interest. While
-                                    useful in certain settings, such assays are limited by their narrow focus.</p>
-                                <p>With ≥ 99.5% call rate across ~600 genes relevant to many
-                                    disease states, the Exome+ assay enables you to run multiple
-                                    panel-grade analyses with a single sample.</p>
+                                <h2 class="tabs-content_text_title">Whole Exome Sequencing</h2>
+                                <p>The original sequencing technology, called Sanger 
+                                    sequencing (named after the scientist who developed it, 
+                                    Frederick Sanger), was a breakthrough that helped scientists 
+                                    determine the human genetic code, but it is time-consuming 
+                                    and expensive. The Sanger method has been automated to make 
+                                    it faster and is still used in laboratories today to 
+                                    sequence short pieces of DNA, but it would take years to 
+                                    sequence all of a person's DNA (known as the person's genome). </p>
+                                <p>>Next-generation sequencing has sped up the process (taking 
+                                    only days to weeks to sequence a human genome) while reducing the cost.</p>
                             </div>
                             <div class="tabs-content_diagrams">
                                 <img src="/img/icons/diagram3.svg" alt="diagram lcWGS and Microarrays">
@@ -118,16 +127,18 @@
 
                 </div>
             </div>
+        </div>
 
-            <div class="faq">
+        <div class="faq">
+            <div class="container">
                 <div class="faq-wrapper">
                     <div class="faq-text">
                         <div class="faq-text_title">
                             A future proofed assay
                         </div>
                         <div class="faq-text_subtitle">
-                            There are several advantages to running panels in the 
-                            presence of a whole exome, including flexible test design, 
+                            There are several advantages to running panels in the
+                            presence of a whole exome, including flexible test design,
                             flexible re-testing, and increased functionality.
                         </div>
                     </div>
@@ -140,11 +151,12 @@
                                 </div>
                                 <div class="faq-item-hidden">
                                     <div class="faq-item-text">
-                                        1) The Exome+ assay provides the flexibility needed to build 
-                                        a comprehensive panel that can be expanded over time. With ~20,000 
-                                        genes sequenced in each sample, every gene becomes a candidate for inclusion. 
-                                        And, while we have ensured the highest call rates across those genes that are 
-                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for all 
+                                        1) The Exome+ assay provides the flexibility needed to build
+                                        a comprehensive panel that can be expanded over time. With ~20,000
+                                        genes sequenced in each sample, every gene becomes a candidate for inclusion.
+                                        And, while we have ensured the highest call rates across those genes that are
+                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for
+                                        all
                                         genes beyond this core set.
                                     </div>
                                     <div class="faq-item-statistics">
@@ -166,11 +178,12 @@
                                 </div>
                                 <div class="faq-item-hidden">
                                     <div class="faq-item-text">
-                                        2) The Exome+ assay provides the flexibility needed to build 
-                                        a comprehensive panel that can be expanded over time. With ~20,000 
-                                        genes sequenced in each sample, every gene becomes a candidate for inclusion. 
-                                        And, while we have ensured the highest call rates across those genes that are 
-                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for all 
+                                        2) The Exome+ assay provides the flexibility needed to build
+                                        a comprehensive panel that can be expanded over time. With ~20,000
+                                        genes sequenced in each sample, every gene becomes a candidate for inclusion.
+                                        And, while we have ensured the highest call rates across those genes that are
+                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for
+                                        all
                                         genes beyond this core set.
                                     </div>
                                     <div class="faq-item-statistics">
@@ -192,11 +205,12 @@
                                 </div>
                                 <div class="faq-item-hidden">
                                     <div class="faq-item-text">
-                                        3) The Exome+ assay provides the flexibility needed to build 
-                                        a comprehensive panel that can be expanded over time. With ~20,000 
-                                        genes sequenced in each sample, every gene becomes a candidate for inclusion. 
-                                        And, while we have ensured the highest call rates across those genes that are 
-                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for all 
+                                        3) The Exome+ assay provides the flexibility needed to build
+                                        a comprehensive panel that can be expanded over time. With ~20,000
+                                        genes sequenced in each sample, every gene becomes a candidate for inclusion.
+                                        And, while we have ensured the highest call rates across those genes that are
+                                        most likely to belong to a panel, the Exome+ assay delivers high call rates for
+                                        all
                                         genes beyond this core set.
                                     </div>
                                     <div class="faq-item-statistics">
@@ -216,9 +230,8 @@
 
                 </div>
             </div>
-
-
         </div>
+
     </div>
 </body>
 

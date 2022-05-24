@@ -1,7 +1,239 @@
-body {
-  background-color: #fff;
+@import url(../css/fonts/stylesheet.css);
+header .header-nav ul a:hover, header .header-cart button:hover, header .header-nav ul a:focus, header .header-cart button:focus {
+  outline: 1px solid rgba(117, 117, 117, 0.386);
+  border-radius: 3px;
 }
 
-body ul {
-  font-size: 243px;
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+
+header {
+  max-height: 63px;
+  height: 100%;
+  display: flex;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff98;
+  border-bottom: 1px solid #efeeee;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+header .header-logo {
+  height: 25px;
+  display: flex;
+}
+
+header .header-logo a {
+  height: 100%;
+  width: 100%;
+}
+
+header .header-logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+header .header-nav {
+  margin-left: auto;
+}
+
+header .header-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+header .header-nav ul li {
+  margin: 0 10px;
+}
+
+header .header-nav ul a {
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  color: #474747;
+  padding: 3px 2px;
+}
+
+header .header-cart {
+  margin-left: 30px;
+}
+
+header .header-cart button {
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../img/icons/cart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.banner {
+  background-image: url(../img/banner_home.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 150px 0;
+}
+
+.banner .container {
+  max-width: 100%;
+}
+
+.banner .banner-wrapper {
+  max-width: 1060px;
+  margin: 0 auto;
+  max-height: 100%;
+  display: flex;
+}
+
+.banner .banner-wrapper h1 {
+  margin: 0 0 45px;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 1.14;
+  display: flex;
+}
+
+.banner .banner-wrapper h1 span {
+  font-size: 14px;
+}
+
+.banner .banner-wrapper .banner-text_subtitle {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 445px;
+  display: flex;
+}
+
+.tabs {
+  background-color: #f4f4f4;
+  padding: 60px 0 70px;
+}
+
+.tabs .tabs-text {
+  max-width: 630px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.tabs .tabs-text .tabs-text_title {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  max-width: 600px;
+}
+
+.tabs .tabs-text .tabs-text_subtitle {
+  font-size: 16px;
+  line-height: 1.63;
+  color: #383838;
+}
+
+.tabs .tabs-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.tabs .tabs-links .tab-link {
+  margin-right: 48px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #ababab;
+  cursor: pointer;
+  padding: 2px 4px;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  transition: color 0.3s, background 0.3s;
+}
+
+.tabs .tabs-links .tab-link.tab-link-active {
+  color: #4b94c6;
+}
+
+.tabs .tabs-links .tab-link:hover, .tabs .tabs-links .tab-link:focus {
+  outline: 1px solid #4b95c668;
+  border-radius: 3px;
+  background-color: #4b95c61b;
+  color: #4b95c6a7;
+}
+
+.tabs .tabs-links .tab-link:last-child {
+  margin-right: 0;
+}
+
+.tabs .tabs-content-wrapper {
+  padding: 60px 70px 130px 70px;
+  border-radius: 3px;
+  box-shadow: 0 0 44px 10px #f4f4f4;
+  background-color: #fff;
+  min-height: 580px;
+  box-sizing: border-box;
+}
+
+.tabs .tabs-content-wrapper .tabs-content {
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.tabs .tabs-content-wrapper .tabs-content .tabs-content_text {
+  max-width: 375px;
+}
+
+.tabs .tabs-content-wrapper .tabs-content .tabs-content_text h2 {
+  font-size: 24px;
+  line-height: 1.33;
+  color: #363636;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.tabs .tabs-content-wrapper .tabs-content .tabs-content_text p {
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: normal;
+  color: #4e4e4e;
+  margin-bottom: 15px;
+}
+
+.tabs .tabs-content-wrapper .tabs-content-hidden {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
 }
