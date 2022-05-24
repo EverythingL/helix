@@ -19,5 +19,23 @@ document.addEventListener('DOMContentLoaded', (e) => {
         })
     })
 
-    console.log(tabList);
+    const faqItemList = document.querySelectorAll('.faq-item-visible');
+
+
+    faqItemList.forEach(faq => {
+        faq.addEventListener('click', (e) => {
+            // e.target.closest('li').classList.toggle('faq-item-hide'); 
+            if (faq.closest('li').classList.contains('faq-item-hide')) {
+                faqItemList.forEach(faq => {
+                    faq.closest('li').classList.add('faq-item-hide');
+                })
+            }
+            e.target.closest('li').classList.toggle('faq-item-hide');
+
+        })
+    })
+
+    console.log(faqItemList);
+
+
 })
