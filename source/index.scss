@@ -33,6 +33,7 @@ header {
 	top: 0;
 	background-color: #ffffff98;
 	border-bottom: 1px solid #efeeee;
+	z-index: 2;
 
 	.container {
 		display: flex;
@@ -55,6 +56,9 @@ header {
 	}
 
 	.header-nav {
+		.header-nav_burger {
+			display: none;
+		}
 		margin-left: auto;
 		ul {
 			display: flex;
@@ -98,6 +102,25 @@ header {
 			@extend %hoverEffect;
 		}
 	}
+}
+
+.message {
+	padding: 12px 0;
+	background-color: #a0c5db;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.message a {
+	color: #fff;
+	font-weight: bold;
+	margin-left: 10px;
+	padding: 0 2px;
+
+	@extend %hoverEffect;
 }
 
 .banner {
@@ -206,12 +229,13 @@ header {
 		background-color: #fff;
 		min-height: 580px;
 		box-sizing: border-box;
+		overflow: hidden;
 
 		.tabs-content {
 			display: flex;
 			justify-content: space-between;
 			opacity: 1;
-			transition: opacity 1s;
+			transition: opacity 0.8s;
 
 			.tabs-content_text {
 				max-width: 375px;
@@ -227,10 +251,13 @@ header {
 				p {
 					font-size: 16px;
 					line-height: 1.63;
-					letter-spacing: normal;
 					color: #4e4e4e;
 					margin-bottom: 15px;
 				}
+			}
+
+			.tabs-content_diagrams-mob {
+				display: none;
 			}
 		}
 		.tabs-content-hidden {
@@ -376,7 +403,6 @@ header {
 						font-stretch: normal;
 						font-style: normal;
 						line-height: normal;
-						letter-spacing: normal;
 						text-align: center;
 						color: #c5dced;
 						// margin-bottom: 8px;

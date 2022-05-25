@@ -1,0 +1,267 @@
+@media screen and (max-width: 1240px) {
+  .container,
+  .banner .banner-wrapper {
+    max-width: 990px;
+  }
+  .tabs .tabs-content-wrapper .tabs-content .tabs-content_text {
+    max-width: 50%;
+    width: 100%;
+  }
+  .tabs-content_diagrams {
+    max-width: 45%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabs-content_diagrams img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container,
+  .banner .banner-wrapper {
+    max-width: 768px;
+  }
+  .banner {
+    padding: 110px 0;
+  }
+  .faq .faqs-content-wrapper .faqs-list .faq-item .faq-item-statistics {
+    max-width: 48%;
+    padding: 30px 0px 40px;
+  }
+  .faq .faqs-content-wrapper .faqs-list .faq-item .faq-item-statistics .statistics-number {
+    font-size: 75px;
+  }
+  .tabs .tabs-content-wrapper {
+    padding: 40px 40px 80px 40px;
+    min-height: 470px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .container,
+  .banner .banner-wrapper {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  header {
+    max-height: 60px;
+  }
+  header .header-nav {
+    margin: 0;
+    order: -1;
+  }
+  header .header-nav .header-nav_burger {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  header .header-nav .header-nav_burger span {
+    transition: 0.3s;
+  }
+  header .header-nav .header-nav_burger.burger-open {
+    align-items: center;
+    justify-content: center;
+  }
+  header .header-nav .header-nav_burger.burger-open span:nth-child(1) {
+    transform: rotate(45deg) translate(1px);
+    transform-origin: center;
+  }
+  header .header-nav .header-nav_burger.burger-open span:nth-child(2) {
+    width: 0;
+    opacity: 0;
+    height: 0;
+  }
+  header .header-nav .header-nav_burger.burger-open span:nth-child(3) {
+    transform: rotate(-45deg) translate(1px);
+    transform-origin: center;
+  }
+  header .header-nav .header-nav_burger:hover, header .header-nav .header-nav_burger:focus {
+    outline: 1px solid rgba(117, 117, 117, 0.386);
+    border-radius: 3px;
+  }
+  header .header-nav .header-nav_burger span {
+    display: inline-flex;
+    width: 100%;
+    height: 2px;
+    background-color: #777;
+  }
+  header .header-nav ul {
+    position: absolute;
+    width: calc(100% - 40px);
+    padding: 20px;
+    right: 0;
+    top: 100%;
+    background-color: #ffffff98;
+    opacity: 0;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  header .header-nav ul.open-menu {
+    opacity: 1;
+    max-height: 300px;
+  }
+  header .header-nav ul.open-menu li {
+    transform: translate(0%);
+    height: 100%;
+    transition-timing-function: ease-in-out;
+  }
+  header .header-nav ul.open-menu li:nth-child(1) {
+    transition-delay: 0s;
+  }
+  header .header-nav ul.open-menu li:nth-child(2) {
+    transition-delay: 0.08s;
+  }
+  header .header-nav ul.open-menu li:nth-child(3) {
+    transition-delay: 0.16s;
+  }
+  header .header-nav ul.open-menu li:nth-child(4) {
+    transition-delay: 0.24s;
+  }
+  header .header-nav ul li {
+    margin-left: 20px;
+    transform: translate(-5%);
+    transition: 0.3s;
+  }
+  header .header-logo {
+    height: 22px;
+    display: flex;
+  }
+  header .header-cart button {
+    width: 30px;
+    height: 30px;
+  }
+  .banner .banner-wrapper {
+    max-width: 80%;
+  }
+  .banner .banner-wrapper h1 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.31;
+    margin: 0 0 15px;
+    justify-content: center;
+  }
+  .banner .banner-wrapper .banner-text_subtitle {
+    font-size: 18px;
+    line-height: 1.44;
+    text-align: center;
+  }
+  .tabs {
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  .tabs .tabs-wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .tabs .tabs-links {
+    display: none;
+  }
+  .tabs .tabs-content-wrapper {
+    display: flex;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    min-height: fit-content;
+    max-width: 100%;
+    width: 100%;
+  }
+  .tabs .tabs-content-wrapper.slick-slider {
+    overflow: visible;
+    position: relative;
+    padding-bottom: 30px;
+  }
+  .tabs .tabs-content-wrapper .slick-list.draggable {
+    max-width: 100%;
+  }
+  .tabs .tabs-content-wrapper .slick-track {
+    display: flex;
+    max-width: 100%;
+  }
+  .tabs .tabs-content-wrapper .slick-dots {
+    bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabs .tabs-content-wrapper .slick-dots li {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    padding: 5px;
+  }
+  .tabs .tabs-content-wrapper .slick-dots li button {
+    height: 100%;
+    width: 100%;
+    background-color: #dfdfdf;
+    padding: 3px;
+    border-radius: 50%;
+  }
+  .tabs .tabs-content-wrapper .slick-dots li button:before {
+    display: none;
+  }
+  .tabs .tabs-content-wrapper .slick-dots li.slick-active button {
+    background-color: #9a9a9a;
+  }
+  .tabs .tabs-content-wrapper .tabs-content .tabs-content_text {
+    width: 100%;
+    max-width: 100%;
+  }
+  .tabs .tabs-content-wrapper .tabs-content .tabs-content_text h2 {
+    text-align: center;
+  }
+  .tabs .tabs-content-wrapper .tabs-content .tabs-content_diagrams-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0;
+    max-height: 450px;
+    overflow: hidden;
+  }
+  .tabs .tabs-content-wrapper .tabs-content .tabs-content_diagrams-mob img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .tabs .tabs-content-wrapper .tabs-content_diagrams {
+    display: none;
+  }
+  .tabs .tabs-content-wrapper .tabs-content-hidden,
+  .tabs .tabs-content-wrapper .tabs-content {
+    height: auto;
+    opacity: 1;
+    flex-shrink: 0;
+    max-width: calc(98% - 20px);
+    border-radius: 3px;
+    box-shadow: 0 0 44px 10px #f4f4f4;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
+  .faq {
+    overflow: hidden;
+  }
+}

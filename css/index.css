@@ -1,5 +1,5 @@
 @import url(../css/fonts/stylesheet.css);
-header .header-nav ul a:hover, header .header-cart button:hover, header .header-nav ul a:focus, header .header-cart button:focus {
+header .header-nav ul a:hover, header .header-cart button:hover, .message a:hover, header .header-nav ul a:focus, header .header-cart button:focus, .message a:focus {
   outline: 1px solid rgba(117, 117, 117, 0.386);
   border-radius: 3px;
 }
@@ -29,6 +29,7 @@ header {
   top: 0;
   background-color: #ffffff98;
   border-bottom: 1px solid #efeeee;
+  z-index: 2;
 }
 
 header .container {
@@ -55,6 +56,10 @@ header .header-logo a img {
 
 header .header-nav {
   margin-left: auto;
+}
+
+header .header-nav .header-nav_burger {
+  display: none;
 }
 
 header .header-nav ul {
@@ -94,6 +99,23 @@ header .header-cart button {
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
+}
+
+.message {
+  padding: 12px 0;
+  background-color: #a0c5db;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.message a {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 0 2px;
 }
 
 .banner {
@@ -204,13 +226,14 @@ header .header-cart button {
   background-color: #fff;
   min-height: 580px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .tabs .tabs-content-wrapper .tabs-content {
   display: flex;
   justify-content: space-between;
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 0.8s;
 }
 
 .tabs .tabs-content-wrapper .tabs-content .tabs-content_text {
@@ -228,9 +251,12 @@ header .header-cart button {
 .tabs .tabs-content-wrapper .tabs-content .tabs-content_text p {
   font-size: 16px;
   line-height: 1.63;
-  letter-spacing: normal;
   color: #4e4e4e;
   margin-bottom: 15px;
+}
+
+.tabs .tabs-content-wrapper .tabs-content .tabs-content_diagrams-mob {
+  display: none;
 }
 
 .tabs .tabs-content-wrapper .tabs-content-hidden {
@@ -379,7 +405,6 @@ header .header-cart button {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #c5dced;
 }
