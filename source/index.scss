@@ -31,7 +31,7 @@ header {
 	padding: 10px 0;
 	position: sticky;
 	top: 0;
-	background-color: #ffffff98;
+	background-color: #ffffff99;
 	border-bottom: 1px solid #efeeee;
 	z-index: 2;
 
@@ -310,6 +310,7 @@ header {
 				padding-bottom: 11px;
 				margin-bottom: 10px;
 				border-bottom: solid 1px #d7d7d7;
+				overflow: hidden;
 
 				&:last-child() {
 					margin: 0;
@@ -332,7 +333,7 @@ header {
 					&:after {
 						content: "";
 						position: absolute;
-						right: 0;
+						right: 8px;
 						top: 0;
 						bottom: 0;
 						margin: auto;
@@ -369,6 +370,8 @@ header {
 					max-width: 465px;
 					width: 100%;
 					box-sizing: border-box;
+					overflow: hidden;
+					transition: padding 0.5s, max-height 0.5s;
 
 					& > div {
 						display: flex;
@@ -428,9 +431,8 @@ header {
 
 				.faq-item-statistics {
 					max-height: 0px;
-					overflow: hidden;
-					padding: 0px 65px 0px;
 					box-shadow: none;
+					padding: 0;
 				}
 			}
 		}

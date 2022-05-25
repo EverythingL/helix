@@ -33,24 +33,31 @@ document.addEventListener('DOMContentLoaded', (e) => {
         })
     })
 
+    $$('.header-nav_burger').addEventListener('click', (e) => {
+        $$('.header-nav_list').classList.toggle('open-menu')
+        e.target.closest('button').classList.toggle('burger-open')
+    })
 
-    if (window.outerWidth < 810) {
 
+    function initSlick() {
         $('.tabs-content-wrapper').slick({
             dots: true,
             infinite: true,
             speed: 300,
             slidesToShow: 1.02,
-            // centerMode: true,
-            // variableWidth: true
         });
+    }
 
+    window.addEventListener('resize', (e) => {
+        if (window.outerWidth < 810) {
+            initSlick();
+        } else {
+            $('.tabs-content-wrapper').slick('unslick');
+        }
+    })
 
-        $$('.header-nav_burger').addEventListener('click', (e) => {
-            $$('.header-nav_list').classList.toggle('open-menu')
-            e.target.closest('button').classList.toggle('burger-open')
-        })
-
+    if (window.outerWidth < 810) {
+        initSlick();
     }
 
 })
